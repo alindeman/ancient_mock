@@ -8,9 +8,9 @@ Gem::Specification.new do |spec|
   spec.version       = AncientMock::VERSION
   spec.authors       = ["Andy Lindeman"]
   spec.email         = ["alindeman@gmail.com"]
-  spec.description   = %q{TODO: Write a gem description}
-  spec.summary       = %q{TODO: Write a gem summary}
-  spec.homepage      = ""
+  spec.description   = %q{A simple mock object library I built on stage at Ancient City Ruby. Do not use in production!}
+  spec.summary       = %q{A simple mock object library I built on stage at Ancient City Ruby.}
+  spec.homepage      = "https://github.com/alindeman/ancient_mock"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)
