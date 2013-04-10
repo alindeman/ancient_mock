@@ -1,6 +1,6 @@
 # AncientMock
 
-A simple mock object library that I build on stage at [Ancient City
+A simple mock object library that I built on stage at [Ancient City
 Ruby](http://ancientcityruby.com).
 
 **Do not use in production!** It was an academic exercise meant to teach
