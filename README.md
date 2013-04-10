@@ -1,29 +1,38 @@
 # AncientMock
 
-TODO: Write a gem description
+A simple mock object library that I build on stage at [Ancient City
+Ruby](http://ancientcityruby.com).
+
+**Do not use in production!** It was an academic exercise meant to teach
+the basics of building a mock object library.
+
+* Video from the talk (not yet posted)
+* [Slides from the talk](https://docs.google.com/presentation/d/1laaQYHFyzcTJzlB9qMmEHyoHIB-S93p9B4L8SbbhoTw/edit#slide=id.p)
 
 ## Installation
 
-Add this line to your application's Gemfile:
-
-    gem 'ancient_mock'
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install ancient_mock
+```ruby
+# Gemfile
+gem 'ancient_mock'
+```
 
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+warehouse = Object.new
 
-## Contributing
+# Stub
+allow(warhouse).to receive(:full?).and_return(true)
+warehouse.full? # => true
 
-1. Fork it
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create new Pull Request
+# Mock
+item_id = 1234
+expect(warehouse).to receive(:remove).with(item_id)
+# warehouse.remove(1234) must be called
+```
+
+## Tests
+
+```ruby
+bundle exec rake
+```
