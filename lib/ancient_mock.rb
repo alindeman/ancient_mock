@@ -44,9 +44,9 @@ module AncientMock
       @definitions << definition
 
       # preserve the method if already exists
-      if @obj.singleton_class.method_defined?(definition.message)
+      if @obj.singleton_methods.include?(definition.message)
         @preserved_methods <<
-          @obj.singleton_class.instance_method(definition.message)
+          @obj.method(definition.message)
       end
 
       definitions = @definitions
