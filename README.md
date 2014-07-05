@@ -6,7 +6,7 @@ Ruby](http://ancientcityruby.com).
 **Do not use in production!** It was an academic exercise meant to teach
 the basics of building a mock object library.
 
-* Video from the talk (not yet posted)
+* [Video from the talk](https://www.youtube.com/watch?v=2aYdtS7FZJA)
 * [Slides from the talk](https://docs.google.com/presentation/d/1laaQYHFyzcTJzlB9qMmEHyoHIB-S93p9B4L8SbbhoTw/edit#slide=id.p)
 
 ## Installation
